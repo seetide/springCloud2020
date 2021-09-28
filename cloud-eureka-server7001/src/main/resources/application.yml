@@ -9,4 +9,4 @@ eureka:
     fetch-registry: false # I am the register center
     service-url:
       #defaultZone: http://eureka7001.com:7001/eureka/
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/

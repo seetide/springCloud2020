@@ -15,7 +15,6 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class PaymentController {
-
     @Resource
     private PaymentService paymentService;
 
@@ -36,9 +35,10 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         log.info("do query" + "hahahaaaa");
         if(payment != null) {
-            return new CommonResult(200, "query successfully, serverPort: 8001", payment);
+            return new CommonResult(200, "query successfully, serverPort: 8002", payment);
         } else {
             return new CommonResult(444, "query failed with id: " + id, null);
         }
     }
+
 }
